@@ -1,0 +1,85 @@
+/* ====Base Styles===== */
+@import './variables';
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+button {
+    color: $primary;
+    background-color: transparent;
+    padding: 18px 36px;
+    border: 2px solid $primary;
+    font-size: 1.8rem;
+    font-weight: 0.8rem;
+    line-height: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: $primary;
+        color: $solid-white;
+    }
+    &:focus {
+        background-color: $primary;
+        color: $solid-white;
+    }
+    &.secondary {
+        background-color: transparent;
+        border-color: $solid-white;
+        color: $solid-white;
+        padding: 8px 12px;
+        &:hover {
+            background-color: $solid-white;
+            color: $primary;
+        }
+        &:focus {
+            background-color: $solid-white;
+            color: $primary;
+        }
+    }
+    &.solid {
+        color: $solid-white;
+        background-color: $primary;
+        &:hover {
+            color: $primary;
+            background-color: $solid-white;
+        }
+    }
+    // style the button in the main nav menu to look like an icon
+    &.menuIcon {
+        display: inherit;
+        padding: 0;
+        border: none;
+        &:hover {
+            background-color: transparent;
+        }
+        &:focus {
+            background-color: transparent;
+        }
+    }
+}
+
+a {
+    &.button {
+        color: $primary;
+        background-color: transparent;
+        padding: 18px 36px;
+        border: 2px solid $primary;
+        font-size: 0.8rem;
+        font-weight: bold;
+        line-height: 1.2rem;
+        text-align: center;
+        transition: 0.3s;
+        &:hover {
+            background-color: $primary;
+            color: $solid-white;
+        }
+        &:focus {
+            background-color: $primary;
+            color: $solid-white;
+        }
+    }
+}
