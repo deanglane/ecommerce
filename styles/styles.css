@@ -398,7 +398,7 @@ a.button:focus {
   color: #fff;
 }
 
-/* ====Navigation===== */
+/* ====Navigation===== */ /* ====Variables===== */
 .skipLink {
   font-size: 1rem;
   padding: 10px;
@@ -413,4 +413,78 @@ a.button:focus {
 }
 .skipLink:focus {
   left: 0;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: #fff;
+}
+.navBar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.searchCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.counter p {
+  width: 24px;
+  height: 24px;
+  background-color: #084b6d;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.slideOutNav {
+  height: 100vh;
+  width: 100%;
+  max-width: 500px;
+  z-index: 20;
+  background-color: #084b6d;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 0;
+  padding: 35px 50px;
+}
+.slideOutNav .buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.slideOutNav .buttonContainer .button {
+  padding: 10px 0 10px 20px;
 }

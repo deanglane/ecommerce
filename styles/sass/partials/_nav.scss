@@ -1,4 +1,5 @@
 /* ====Navigation===== */
+@import 'variables';
 
 .skipLink {
     font-size: 1rem;
@@ -16,3 +17,62 @@
     }
 }
 
+// Nav bar
+
+.navBar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid rgba($color: $primary, $alpha: 0.08);
+    background-color: $solid-white;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+}
+
+.searchCart {
+    display: flex;
+    gap: 15px;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    p {
+        width: 24px;
+        height: 24px;
+        background-color: $primary;
+        color: $solid-white; 
+        text-align: center;
+        border-radius: 50%;
+    }
+}
+
+// slide out nav!!
+.slideOutNav {
+    height: 100vh;
+    width: 100%; //sets the slide out to 100% of the page
+    max-width: 500px; // slide out will only be 500px so on desktop display it will only be no bigger than 500px
+    z-index: 20;
+    background-color: $primary;
+    color: $solid-white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    // left: -506px
+    padding: 35px 50px;
+
+    .buttonContainer {
+        display: flex;
+        justify-content: flex-end;
+
+        .button {
+            padding: 10px 0 10px 20px;
+        }
+    }
+}
