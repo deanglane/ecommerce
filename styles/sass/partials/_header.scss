@@ -1,0 +1,23 @@
+/* ====Header===== */
+
+header {
+    background-color: $tertiary;
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .headerImgContainer {
+        width: 45%;
+    }
+
+    .headerContent {
+        width: 55%;
+        color: $primary;
+
+        .contentContainer { // this is basically a new wrapper for the content section of the header
+            width: 65%;
+            margin: 0 auto;
+        }
+    }
+}
