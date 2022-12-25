@@ -40,7 +40,7 @@
 
     }
 
-// individual card styling
+    // individual card styling
     .item1 a {background-color: rgba($quinary, 0.5);}
     .item2 a {background-color: $secondary;}
     .item3 a {background-color: $tertiary;}
@@ -48,3 +48,22 @@
 }
 
 // let them play
+.play {
+    background-image: url("../assets/background-image.jpg");
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+
+    .playContainer {
+        background-color: $solidWhite;
+        border: 24px solid $secondary;
+        max-width: 650px;
+        padding: 70px 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

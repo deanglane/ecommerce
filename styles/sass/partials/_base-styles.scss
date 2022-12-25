@@ -40,10 +40,12 @@ button {
             color: $primary;
         }
     }
+    
     &.solid {
         color: $solid-white;
         background-color: $primary;
-        &:hover {
+        &:hover,
+        &:focus {
             color: $primary;
             background-color: $solid-white;
         }
@@ -75,11 +77,31 @@ a {
         transition: 0.3s;
         &:hover {
             background-color: $primary;
-            color: $solid-white;
+            color: $solidWhite;
         }
         &:focus {
             background-color: $primary;
-            color: $solid-white;
+            color: $solidWhite;
+        }
+    }
+
+    // Styles for anchors with "solid" class
+    &.solid {
+        color: $solidWhite;
+        background-color: $primary;
+        padding: 18px 36px;
+        border: 2px solid $primary;
+        font-size: 0.8rem;
+        font-weight: bold;
+        line-height: 1.2rem;
+        text-align: center;
+        &:hover {
+            color: $primary;
+            background-color: $solidWhite;
+        }
+        &:focus {
+            color: $primary;
+            background-color: $solidWhite;
         }
     }
 }
