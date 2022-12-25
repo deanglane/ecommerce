@@ -1,0 +1,33 @@
+/* ====Footer scss===== */
+
+.footer {
+    background-color: $primary;
+    color: $solid-white;
+    padding: 90px 0 50px;
+
+    .footerFlex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h4 {
+        color: $solid-white;
+    }
+
+    .footerNav {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+
+        a {
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+            color: rgba($solid-white, 0.5);
+
+            &:hover,
+            &:focus {
+                color: rgba($solid-white, 1);
+            }
+        }
+    }
+}
