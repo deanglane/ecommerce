@@ -407,12 +407,16 @@ a.solid {
   background-color: #084b6d;
   padding: 18px 36px;
   border: 2px solid #084b6d;
-  font-size: 1.8rem;
-  font-weight: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: bold;
   line-height: 1.2rem;
   text-align: center;
 }
-a.solid:hover, a.solid:focus {
+a.solid:hover {
+  color: #084b6d;
+  background-color: #fff;
+}
+a.solid:focus {
   color: #084b6d;
   background-color: #fff;
 }
@@ -594,7 +598,7 @@ header .headerContent .contentContainer {
 }
 
 .play {
-  background-image: url("../../../assets/background-image.jpg");
+  background-image: url("../assets/background-image.jpg");
   background-position: center;
   background-size: cover;
   min-height: 90vh;
@@ -655,4 +659,13 @@ header .headerContent .contentContainer {
 }
 .footer .footerNav a:hover, .footer .footerNav a:focus {
   color: white;
+}
+
+/* ====Media Queries===== */
+@media (max-width: 1000px) {
+  .headerImgContainer img {
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }

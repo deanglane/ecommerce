@@ -77,17 +77,17 @@ a {
         transition: 0.3s;
         &:hover {
             background-color: $primary;
-            color: $solidWhite;
+            color: $solid-white
         }
         &:focus {
             background-color: $primary;
-            color: $solidWhite;
+            color: $solid-white;
         }
     }
 
     // Styles for anchors with "solid" class
     &.solid {
-        color: $solidWhite;
+        color: $solid-white;
         background-color: $primary;
         padding: 18px 36px;
         border: 2px solid $primary;
@@ -97,11 +97,11 @@ a {
         text-align: center;
         &:hover {
             color: $primary;
-            background-color: $solidWhite;
+            background-color: $solid-white;
         }
         &:focus {
             color: $primary;
-            background-color: $solidWhite;
+            background-color: $solid-white;
         }
     }
 }

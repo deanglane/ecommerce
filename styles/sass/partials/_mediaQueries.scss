@@ -1,0 +1,19 @@
+/* ====Media Queries===== */
+
+    
+@media (max-width: 1000px) {
+    .headerImgContainer {
+        img {
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
+}
+    
+@media (max-width: 800px) {
+
+}
+    
+@media (max-width: 500px) {
+
+}
